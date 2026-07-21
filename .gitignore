@@ -1,0 +1,60 @@
+# =========================
+# Python
+# =========================
+backend/.venv/
+backend/.env
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.coverage
+
+# =========================
+# Node / Next.js
+# =========================
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/.env.local
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.local
+.env.*
+
+# =========================
+# IDE
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Logs
+# =========================
+*.log
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Build Artifacts
+# =========================
+dist/
+build/
+
+# =========================
+# SQLite (if used)
+# =========================
+*.db
+*.sqlite3
