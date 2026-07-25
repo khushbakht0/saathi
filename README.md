@@ -51,3 +51,8 @@ This repository follows a clean architecture-style separation:
 - Frontend: Vercel
 - Backend: Railway
 - Database: Railway PostgreSQL
+
+  ## why we made it?
+
+  -so students can be facilitated with optimized use of gmail,gcr and university study groups.
+  
