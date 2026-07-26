@@ -1,9 +1,6 @@
 import logging
 
-logger = logging.getLogger("ai_student_assistant")
-logger.setLevel(logging.INFO)
+from app.core.logging import configure_logging
 
-if not logger.handlers:
-    handler = logging.StreamHandler()
-    handler.setFormatter(logging.Formatter("%(asctime)s %(levelname)s %(name)s %(message)s"))
-    logger.addHandler(handler)
+configure_logging()
+logger = logging.getLogger("ai_student_assistant")
