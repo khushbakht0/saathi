@@ -1,16 +1,20 @@
-from pydantic_settings import BaseSettings
+from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    database_url: str = "postgresql://user:password@localhost:5432/ai_student_assistant"
+    model_config = SettingsConfigDict(
+        env_file=".env",
+        env_file_encoding="utf-8",
+        extra="ignore",
+    )
+
+    database_url: str = ""
+    environment: str = "development"
+    jwt_secret: str = ""
     openai_api_key: str = ""
     google_client_id: str = ""
     google_client_secret: str = ""
-    jwt_secret: str = "change-me"
-    next_public_api_url: str = "http://localhost:8000"
-
-    class Config:
-        env_file = ".env"
+    backend_version: str = "0.2.0"
 
 
 settings = Settings()
